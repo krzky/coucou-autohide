@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net48</TargetFramework>
+    <UseWindowsForms>true</UseWindowsForms>
+    <AssemblyName>CoucouAutoHideSetup</AssemblyName>
+    <RootNamespace>CoucouAutoHideSetup</RootNamespace>
+    <LangVersion>latest</LangVersion>
+    <ApplicationIcon>setup.ico</ApplicationIcon>
+    <Version>1.1.0</Version>
+    <Company>Kay (krzky)</Company>
+    <Product>Coucou auto-hide</Product>
+    <Copyright>MIT (c) 2026 Kay (krzky)</Copyright>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.NETFramework.ReferenceAssemblies" Version="1.0.3" PrivateAssets="all" />
+    <Reference Include="Microsoft.CSharp" />
+    <EmbeddedResource Include="payload\CoucouAutoHide.exe" LogicalName="payload.exe" />
+  </ItemGroup>
+</Project>
