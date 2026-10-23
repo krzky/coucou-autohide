@@ -1,6 +1,10 @@
-# Coucou auto-hide: slides the Coucou overlay up behind the top screen edge (like an
-# auto-hide toolbar) and slides it back down when the mouse touches the top edge.
-# Coucou itself is not modified - this only moves its window.
+# Coucou auto-hide 1.0.0
+# Slides the Coucou overlay up behind the top screen edge (like an auto-hide toolbar)
+# and slides it back down when the mouse touches the top edge.
+#
+# Coucou itself is not modified: no file of the app is touched, no process is
+# injected. This only calls SetWindowPos() on the app's own top-level window.
+# Part of krzky/coucou-autohide — MIT, (c) 2026 Kay (krzky).
 
 $src = @"
 using System;
